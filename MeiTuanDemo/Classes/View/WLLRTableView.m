@@ -7,7 +7,7 @@
 //
 
 #import "WLLRTableView.h"
-#import "WLCategory.h"
+
 
 #import "WLLeftCell.h"
 #import "WLRighteCell.h"
@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *leftTableView;
 @property (weak, nonatomic) IBOutlet UITableView *rightTableView;
 
+/** subData */
+@property(nonatomic,strong)NSArray *subData;
 @end
 @implementation WLLRTableView
 
@@ -31,23 +33,18 @@
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
 }
 
-- (void)setCategores:(NSArray *)categores
-{
-    _categores = categores;
-    [self.leftTableView reloadData];
-}
 #pragma mark - UITableViewDataSource
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSArray *array =self.categores;
+    NSInteger number = 0;
     if (tableView == self.leftTableView) {
-        return array.count;
+        number = [self.dataSource numberOfInLeftTableViewWith:self];
     }else{
-        WLCategory *category = array[[self.leftTableView indexPathForSelectedRow].row];
-        return category.subcategories.count;
+        number = self.subData.count;
+       
     }
-    
+    return number;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,20 +56,23 @@
         cell = [WLLeftCell leftCell:tableView];
         
         //2.取出模型
-        WLCategory *category = self.categores[indexPath.row];
-        cell.textLabel.text = category.name;
-        cell.imageView.image = [UIImage imageNamed:category.small_icon];
-        cell.imageView.highlightedImage = [UIImage imageNamed:category.small_highlighted_icon];
-   
+        cell.textLabel.text = [self.dataSource rlTableView:self leftTitlewithRow:indexPath.row];
+        
+        if ([self.dataSource respondsToSelector:@selector(rlTableView:imageNameForRow:)]) {
+    
+            cell.imageView.image = [UIImage imageNamed:[self.dataSource rlTableView:self imageNameForRow:indexPath.row]];
+        }
+        if ([self.dataSource respondsToSelector:@selector(rlTableView:heighImageNameForRow:)]) {
+            cell.imageView.highlightedImage = [UIImage imageNamed:[self.dataSource rlTableView:self heighImageNameForRow:indexPath.row]];
+        }
+        
     }else{
         //1.创建cell
         cell = [WLRighteCell rightCell:tableView];
         
         //2.取出模型
-        NSArray *array =self.categores;
-        WLCategory *category = array[[self.leftTableView indexPathForSelectedRow].row];
-        cell.textLabel.text = category.subcategories[indexPath.row];
-    
+        cell.textLabel.text = self.subData[indexPath.row];
+        
     }
     
     
@@ -83,13 +83,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (tableView == self.leftTableView) {
+        self.subData = [self.dataSource rlTableView:self subdataOfRow:indexPath.row];
         [self.rightTableView reloadData];
     }else{
-        NSArray *array =self.categores;
-        WLCategory *category = array[[self.leftTableView indexPathForSelectedRow].row];
-        if (self.updateHomeTopItemBlock) {
-            self.updateHomeTopItemBlock(category,indexPath.row);
-        }
+      
     }
 }
 

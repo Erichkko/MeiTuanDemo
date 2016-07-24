@@ -11,7 +11,7 @@
 
 #import "WLCategory.h"
 #import "MJExtension.h"
-@interface WLCategoryController ()
+@interface WLCategoryController ()<WLLRTableViewDataSource>
 /** categories */
 @property(nonatomic,strong)NSArray *categories;
 @end
@@ -29,12 +29,36 @@
     
     WLLRTableView *lrView = [WLLRTableView rlTableView];
     lrView.frame = self.view.bounds;
+    lrView.dataSource = self;
     [self.view addSubview:lrView];
-    NSLog(@"array =  %@",self.categories);
-    lrView.categores = self.categories;
-    lrView.updateHomeTopItemBlock = self.updateHomeTopItemBlock;
-    
+//    lrView.categores = self.categories;
+//    lrView.updateHomeTopItemBlock = self.updateHomeTopItemBlock;
+//    
+}
+
+#pragma mark - WLLRTableViewDataSource
+- (NSInteger) numberOfInLeftTableViewWith:(WLLRTableView *)rlTableView
+{
+    return self.categories.count;
+}
+- (NSArray *)rlTableView:(WLLRTableView *)rlTableView subdataOfRow:(NSInteger)row
+{
+    return [self.categories[row] subcategories];
+}
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView leftTitlewithRow:(NSInteger)row
+{
+    return [self.categories[row] name];
 }
 
 
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView imageNameForRow:(NSInteger)row
+{
+    WLCategory *category = self.categories[row];
+    return category.small_icon;
+}
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView heighImageNameForRow:(NSInteger)row
+{
+    WLCategory *category = self.categories[row];
+    return category.small_highlighted_icon;
+}
 @end

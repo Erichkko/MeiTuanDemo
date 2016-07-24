@@ -7,13 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-@class WLCategory;
+@class WLLRTableView;
 
-typedef void(^UpdateHomeTopItemBlock)(WLCategory *,NSInteger);
+@protocol WLLRTableViewDataSource <NSObject>
+
+@required
+- (NSInteger) numberOfInLeftTableViewWith:(WLLRTableView *)rlTableView;
+- (NSArray *)rlTableView:(WLLRTableView *)rlTableView subdataOfRow:(NSInteger)row;
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView leftTitlewithRow:(NSInteger)row;
+
+@optional
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView imageNameForRow:(NSInteger)row;
+- (NSString *)rlTableView:(WLLRTableView *)rlTableView heighImageNameForRow:(NSInteger)row;
+
+@end
 @interface WLLRTableView : UIView
-/** categores */
-@property(nonatomic,strong)NSArray *categores;
+
 + (instancetype)rlTableView;
-/**updateHomeTopItemBlock*/
-@property(nonatomic,copy)UpdateHomeTopItemBlock updateHomeTopItemBlock;
+/** datasource */
+@property(nonatomic,weak)id <WLLRTableViewDataSource>dataSource;
+
 @end
