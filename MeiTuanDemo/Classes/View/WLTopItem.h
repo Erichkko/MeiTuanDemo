@@ -16,4 +16,6 @@
 
 //传递按钮点击事件
 -(void)addTarget:(id)target action:(SEL)action ;
+
+//66
 @end
