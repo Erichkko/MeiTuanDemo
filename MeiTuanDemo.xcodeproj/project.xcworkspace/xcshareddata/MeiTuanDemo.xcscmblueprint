@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5B48CE739912ECDAF22F2546A6A6E419DE8DCE0C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "65D6DB69FC84550EA0B40BE6508B97475483A876" : 0,
+    "5B48CE739912ECDAF22F2546A6A6E419DE8DCE0C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BC732919-E751-4BB3-90B8-07219D303F2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "65D6DB69FC84550EA0B40BE6508B97475483A876" : "",
+    "5B48CE739912ECDAF22F2546A6A6E419DE8DCE0C" : "MeiTuanDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MeiTuanDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MeiTuanDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erichkko\/MeiTuanDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5B48CE739912ECDAF22F2546A6A6E419DE8DCE0C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erichkko\/PinterestLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65D6DB69FC84550EA0B40BE6508B97475483A876"
+    }
+  ]
+}

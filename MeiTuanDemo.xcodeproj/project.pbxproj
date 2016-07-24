@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEB00B941D44850600D2A69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00B931D44850600D2A69D /* main.m */; };
-		FEB00B971D44850600D2A69D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00B961D44850600D2A69D /* AppDelegate.m */; };
-		FEB00B9A1D44850600D2A69D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00B991D44850600D2A69D /* ViewController.m */; };
 		FEB00B9D1D44850600D2A69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB00B9B1D44850600D2A69D /* Main.storyboard */; };
 		FEB00B9F1D44850600D2A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB00B9E1D44850600D2A69D /* Assets.xcassets */; };
-		FEB00BA21D44850600D2A69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BA01D44850600D2A69D /* LaunchScreen.storyboard */; };
+		FEB00BAA1D44868400D2A69D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BA91D44868400D2A69D /* Images.xcassets */; };
+		FEB00BB31D44880D00D2A69D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB11D44880D00D2A69D /* AppDelegate.m */; };
+		FEB00BB41D44880D00D2A69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB21D44880D00D2A69D /* main.m */; };
+		FEB00BB71D44890800D2A69D /* WLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB61D44890800D2A69D /* WLNavViewController.m */; };
+		FEB00BBA1D448BFE00D2A69D /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB91D448BFE00D2A69D /* WLHomeViewController.m */; };
+		FEB00BBD1D448F4100D2A69D /* WLTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BBC1D448F4100D2A69D /* WLTopItem.m */; };
+		FEB00BBF1D448F4C00D2A69D /* WLTopItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEB00B8F1D44850500D2A69D /* MeiTuanDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEB00B931D44850600D2A69D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FEB00B951D44850600D2A69D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FEB00B961D44850600D2A69D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FEB00B981D44850600D2A69D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FEB00B991D44850600D2A69D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FEB00B9C1D44850600D2A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEB00B9E1D44850600D2A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FEB00BA11D44850600D2A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEB00BA31D44850600D2A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB00BA91D44868400D2A69D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEB00BB01D44880D00D2A69D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEB00BB11D44880D00D2A69D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEB00BB21D44880D00D2A69D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEB00BB51D44890800D2A69D /* WLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNavViewController.h; sourceTree = "<group>"; };
+		FEB00BB61D44890800D2A69D /* WLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNavViewController.m; sourceTree = "<group>"; };
+		FEB00BB81D448BFE00D2A69D /* WLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
+		FEB00BB91D448BFE00D2A69D /* WLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
+		FEB00BBB1D448F4100D2A69D /* WLTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopItem.h; sourceTree = "<group>"; };
+		FEB00BBC1D448F4100D2A69D /* WLTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopItem.m; sourceTree = "<group>"; };
+		FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLTopItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +66,11 @@
 		FEB00B911D44850500D2A69D /* MeiTuanDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FEB00B951D44850600D2A69D /* AppDelegate.h */,
-				FEB00B961D44850600D2A69D /* AppDelegate.m */,
-				FEB00B981D44850600D2A69D /* ViewController.h */,
-				FEB00B991D44850600D2A69D /* ViewController.m */,
+				FEB00BAB1D4487B500D2A69D /* Classes */,
 				FEB00B9B1D44850600D2A69D /* Main.storyboard */,
 				FEB00B9E1D44850600D2A69D /* Assets.xcassets */,
-				FEB00BA01D44850600D2A69D /* LaunchScreen.storyboard */,
 				FEB00BA31D44850600D2A69D /* Info.plist */,
+				FEB00BA91D44868400D2A69D /* Images.xcassets */,
 				FEB00B921D44850600D2A69D /* Supporting Files */,
 			);
 			path = MeiTuanDemo;
@@ -74,9 +79,57 @@
 		FEB00B921D44850600D2A69D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEB00B931D44850600D2A69D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEB00BAB1D4487B500D2A69D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BAD1D4487B500D2A69D /* Model */,
+				FEB00BAF1D4487B500D2A69D /* View */,
+				FEB00BAC1D4487B500D2A69D /* Controller */,
+				FEB00BAE1D4487B500D2A69D /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FEB00BAC1D4487B500D2A69D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BB51D44890800D2A69D /* WLNavViewController.h */,
+				FEB00BB61D44890800D2A69D /* WLNavViewController.m */,
+				FEB00BB81D448BFE00D2A69D /* WLHomeViewController.h */,
+				FEB00BB91D448BFE00D2A69D /* WLHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEB00BAD1D4487B500D2A69D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEB00BAE1D4487B500D2A69D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BB01D44880D00D2A69D /* AppDelegate.h */,
+				FEB00BB11D44880D00D2A69D /* AppDelegate.m */,
+				FEB00BB21D44880D00D2A69D /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		FEB00BAF1D4487B500D2A69D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BBB1D448F4100D2A69D /* WLTopItem.h */,
+				FEB00BBC1D448F4100D2A69D /* WLTopItem.m */,
+				FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +158,7 @@
 		FEB00B871D44850500D2A69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wanglong;
 				TargetAttributes = {
@@ -137,9 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB00BA21D44850600D2A69D /* LaunchScreen.storyboard in Resources */,
+				FEB00BAA1D44868400D2A69D /* Images.xcassets in Resources */,
 				FEB00B9F1D44850600D2A69D /* Assets.xcassets in Resources */,
 				FEB00B9D1D44850600D2A69D /* Main.storyboard in Resources */,
+				FEB00BBF1D448F4C00D2A69D /* WLTopItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB00B9A1D44850600D2A69D /* ViewController.m in Sources */,
-				FEB00B971D44850600D2A69D /* AppDelegate.m in Sources */,
-				FEB00B941D44850600D2A69D /* main.m in Sources */,
+				FEB00BBA1D448BFE00D2A69D /* WLHomeViewController.m in Sources */,
+				FEB00BB41D44880D00D2A69D /* main.m in Sources */,
+				FEB00BB71D44890800D2A69D /* WLNavViewController.m in Sources */,
+				FEB00BBD1D448F4100D2A69D /* WLTopItem.m in Sources */,
+				FEB00BB31D44880D00D2A69D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,14 +222,6 @@
 				FEB00B9C1D44850600D2A69D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FEB00BA01D44850600D2A69D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEB00BA11D44850600D2A69D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MeiTuanDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.MeiTuanDemo;
@@ -275,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MeiTuanDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.MeiTuanDemo;

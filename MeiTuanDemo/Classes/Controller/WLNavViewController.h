@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WLNavViewController.h
 //  MeiTuanDemo
 //
 //  Created by wanglong on 16/7/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WLNavViewController : UINavigationController
 
 @end
-
