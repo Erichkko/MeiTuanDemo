@@ -17,7 +17,8 @@
 + (void)initialize
 {
     UINavigationBar *bar = [UINavigationBar appearance];
-    //改变导航控制器的 背景图片
+//    [bar setBarTintColor:[UIColor blueColor]];
+//    改变导航控制器的 背景图片
     [bar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:UIBarMetricsDefault];
 }
 - (void)viewDidLoad {

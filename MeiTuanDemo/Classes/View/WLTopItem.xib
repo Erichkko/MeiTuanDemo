@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -8,12 +8,65 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WLTopItem">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+            <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
             <autoresizingMask key="autoresizingMask"/>
-            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_dropdown_leftpart" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-Iu-qKq">
+                    <rect key="frame" x="4" y="4" width="2" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="jK9-Fx-DRn"/>
+                        <constraint firstAttribute="width" constant="2" id="q4c-Zc-2VP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美团" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJE-JC-mCa">
+                    <rect key="frame" x="46" y="0.0" width="94" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="hSL-7D-p2N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部分类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIe-hB-omi">
+                    <rect key="frame" x="46" y="20" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjU-90-Ery">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="icon_category_-1"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xIe-hB-omi" firstAttribute="width" secondItem="fJE-JC-mCa" secondAttribute="width" id="1Et-D2-GS0"/>
+                <constraint firstItem="xIe-hB-omi" firstAttribute="top" secondItem="fJE-JC-mCa" secondAttribute="bottom" id="42N-zz-0XG"/>
+                <constraint firstItem="xIe-hB-omi" firstAttribute="height" secondItem="fJE-JC-mCa" secondAttribute="height" id="8j6-7U-Ulo"/>
+                <constraint firstItem="sUV-Iu-qKq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ALb-I7-Aqx"/>
+                <constraint firstItem="xIe-hB-omi" firstAttribute="leading" secondItem="fJE-JC-mCa" secondAttribute="leading" id="FX9-uD-sfQ"/>
+                <constraint firstItem="sUV-Iu-qKq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="RYX-ch-tcr"/>
+                <constraint firstAttribute="bottom" secondItem="CjU-90-Ery" secondAttribute="bottom" id="Vko-aw-yhb"/>
+                <constraint firstItem="fJE-JC-mCa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="css-pY-tTj"/>
+                <constraint firstItem="fJE-JC-mCa" firstAttribute="leading" secondItem="sUV-Iu-qKq" secondAttribute="trailing" constant="40" id="dEz-Xh-hRY"/>
+                <constraint firstAttribute="trailing" secondItem="fJE-JC-mCa" secondAttribute="trailing" id="hn1-rS-Jlg"/>
+                <constraint firstAttribute="trailing" secondItem="CjU-90-Ery" secondAttribute="trailing" id="j8A-Aa-n7F"/>
+                <constraint firstItem="CjU-90-Ery" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mnv-bF-VM5"/>
+                <constraint firstItem="CjU-90-Ery" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nCT-DW-eas"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="244" y="56.5"/>
+            <connections>
+                <outlet property="iconBtn" destination="CjU-90-Ery" id="7ju-EW-UMY"/>
+                <outlet property="subTitleLabel" destination="xIe-hB-omi" id="5mP-rF-v60"/>
+                <outlet property="titleLabel" destination="fJE-JC-mCa" id="BtE-bo-Yaf"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="56"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_dropdown_leftpart" width="5" height="42"/>
+        <image name="icon_category_-1" width="30" height="30"/>
+    </resources>
 </document>

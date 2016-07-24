@@ -10,4 +10,10 @@
 
 @interface WLTopItem : UIView
 +(instancetype)topItem;
+- (void)setTitle:(NSString *)title;
+- (void)setSubTitle:(NSString *)subtitle;
+- (void)setIconBtnNormal:(NSString *)imageName andIconBtnClick:(NSString *)clickImageName;
+
+//传递按钮点击事件
+-(void)addTarget:(id)target action:(SEL)action ;
 @end

@@ -9,13 +9,32 @@
 /* Begin PBXBuildFile section */
 		FEB00B9D1D44850600D2A69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB00B9B1D44850600D2A69D /* Main.storyboard */; };
 		FEB00B9F1D44850600D2A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB00B9E1D44850600D2A69D /* Assets.xcassets */; };
-		FEB00BAA1D44868400D2A69D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BA91D44868400D2A69D /* Images.xcassets */; };
 		FEB00BB31D44880D00D2A69D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB11D44880D00D2A69D /* AppDelegate.m */; };
 		FEB00BB41D44880D00D2A69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB21D44880D00D2A69D /* main.m */; };
 		FEB00BB71D44890800D2A69D /* WLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB61D44890800D2A69D /* WLNavViewController.m */; };
 		FEB00BBA1D448BFE00D2A69D /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BB91D448BFE00D2A69D /* WLHomeViewController.m */; };
 		FEB00BBD1D448F4100D2A69D /* WLTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BBC1D448F4100D2A69D /* WLTopItem.m */; };
 		FEB00BBF1D448F4C00D2A69D /* WLTopItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */; };
+		FEB00BC21D44C2FA00D2A69D /* WLCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BC11D44C2FA00D2A69D /* WLCategoryController.m */; };
+		FEB00BC51D44C76E00D2A69D /* WLLRTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BC41D44C76E00D2A69D /* WLLRTableView.m */; };
+		FEB00BC71D44C77F00D2A69D /* WLLRTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BC61D44C77F00D2A69D /* WLLRTableView.xib */; };
+		FEB00BCC1D44DF6200D2A69D /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BC91D44DF6200D2A69D /* categories.plist */; };
+		FEB00BCD1D44DF6200D2A69D /* gz.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BCA1D44DF6200D2A69D /* gz.plist */; };
+		FEB00BCE1D44DF6200D2A69D /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEB00BCB1D44DF6200D2A69D /* sorts.plist */; };
+		FEB00BE21D44E0F600D2A69D /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BD31D44E0F600D2A69D /* MJExtensionConst.m */; };
+		FEB00BE31D44E0F600D2A69D /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BD51D44E0F600D2A69D /* MJFoundation.m */; };
+		FEB00BE41D44E0F600D2A69D /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BD71D44E0F600D2A69D /* MJProperty.m */; };
+		FEB00BE51D44E0F600D2A69D /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BD91D44E0F600D2A69D /* MJType.m */; };
+		FEB00BE61D44E0F600D2A69D /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BDB1D44E0F600D2A69D /* NSObject+MJCoding.m */; };
+		FEB00BE71D44E0F600D2A69D /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BDD1D44E0F600D2A69D /* NSObject+MJKeyValue.m */; };
+		FEB00BE81D44E0F600D2A69D /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BDF1D44E0F600D2A69D /* NSObject+MJProperty.m */; };
+		FEB00BE91D44E0F600D2A69D /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BE11D44E0F600D2A69D /* NSString+MJExtension.m */; };
+		FEB00BEC1D44E16B00D2A69D /* WLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BEB1D44E16B00D2A69D /* WLCategory.m */; };
+		FEB00BEF1D44E43400D2A69D /* WLMap.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BEE1D44E43400D2A69D /* WLMap.m */; };
+		FEB00BF21D44E49F00D2A69D /* WLSort.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BF11D44E49F00D2A69D /* WLSort.m */; };
+		FEB00BF51D44FE7600D2A69D /* WLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BF41D44FE7600D2A69D /* WLMapViewController.m */; };
+		FEB00BF81D4501C200D2A69D /* WLLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BF71D4501C200D2A69D /* WLLeftCell.m */; };
+		FEB00BFB1D4501D500D2A69D /* WLRighteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +42,6 @@
 		FEB00B9C1D44850600D2A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEB00B9E1D44850600D2A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEB00BA31D44850600D2A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEB00BA91D44868400D2A69D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FEB00BB01D44880D00D2A69D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEB00BB11D44880D00D2A69D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FEB00BB21D44880D00D2A69D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,6 +52,43 @@
 		FEB00BBB1D448F4100D2A69D /* WLTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLTopItem.h; sourceTree = "<group>"; };
 		FEB00BBC1D448F4100D2A69D /* WLTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLTopItem.m; sourceTree = "<group>"; };
 		FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLTopItem.xib; sourceTree = "<group>"; };
+		FEB00BC01D44C2FA00D2A69D /* WLCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCategoryController.h; sourceTree = "<group>"; };
+		FEB00BC11D44C2FA00D2A69D /* WLCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCategoryController.m; sourceTree = "<group>"; };
+		FEB00BC31D44C76E00D2A69D /* WLLRTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLRTableView.h; sourceTree = "<group>"; };
+		FEB00BC41D44C76E00D2A69D /* WLLRTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLRTableView.m; sourceTree = "<group>"; };
+		FEB00BC61D44C77F00D2A69D /* WLLRTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLLRTableView.xib; sourceTree = "<group>"; };
+		FEB00BC91D44DF6200D2A69D /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		FEB00BCA1D44DF6200D2A69D /* gz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gz.plist; sourceTree = "<group>"; };
+		FEB00BCB1D44DF6200D2A69D /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		FEB00BD11D44E0F600D2A69D /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		FEB00BD21D44E0F600D2A69D /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		FEB00BD31D44E0F600D2A69D /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		FEB00BD41D44E0F600D2A69D /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		FEB00BD51D44E0F600D2A69D /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		FEB00BD61D44E0F600D2A69D /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		FEB00BD71D44E0F600D2A69D /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		FEB00BD81D44E0F600D2A69D /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		FEB00BD91D44E0F600D2A69D /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		FEB00BDA1D44E0F600D2A69D /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		FEB00BDB1D44E0F600D2A69D /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		FEB00BDC1D44E0F600D2A69D /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		FEB00BDD1D44E0F600D2A69D /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		FEB00BDE1D44E0F600D2A69D /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		FEB00BDF1D44E0F600D2A69D /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		FEB00BE01D44E0F600D2A69D /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		FEB00BE11D44E0F600D2A69D /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		FEB00BEA1D44E16B00D2A69D /* WLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCategory.h; sourceTree = "<group>"; };
+		FEB00BEB1D44E16B00D2A69D /* WLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCategory.m; sourceTree = "<group>"; };
+		FEB00BED1D44E43400D2A69D /* WLMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMap.h; sourceTree = "<group>"; };
+		FEB00BEE1D44E43400D2A69D /* WLMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMap.m; sourceTree = "<group>"; };
+		FEB00BF01D44E49F00D2A69D /* WLSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSort.h; sourceTree = "<group>"; };
+		FEB00BF11D44E49F00D2A69D /* WLSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSort.m; sourceTree = "<group>"; };
+		FEB00BF31D44FE7600D2A69D /* WLMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMapViewController.h; sourceTree = "<group>"; };
+		FEB00BF41D44FE7600D2A69D /* WLMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMapViewController.m; sourceTree = "<group>"; };
+		FEB00BF61D4501C100D2A69D /* WLLeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLeftCell.h; sourceTree = "<group>"; };
+		FEB00BF71D4501C200D2A69D /* WLLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLeftCell.m; sourceTree = "<group>"; };
+		FEB00BF91D4501D500D2A69D /* WLRighteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRighteCell.h; sourceTree = "<group>"; };
+		FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRighteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +121,12 @@
 		FEB00B911D44850500D2A69D /* MeiTuanDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FEB00BCF1D44E0F600D2A69D /* Lib */,
+				FEB00BC81D44DF6200D2A69D /* JSON */,
 				FEB00BAB1D4487B500D2A69D /* Classes */,
 				FEB00B9B1D44850600D2A69D /* Main.storyboard */,
 				FEB00B9E1D44850600D2A69D /* Assets.xcassets */,
 				FEB00BA31D44850600D2A69D /* Info.plist */,
-				FEB00BA91D44868400D2A69D /* Images.xcassets */,
 				FEB00B921D44850600D2A69D /* Supporting Files */,
 			);
 			path = MeiTuanDemo;
@@ -101,6 +157,10 @@
 				FEB00BB61D44890800D2A69D /* WLNavViewController.m */,
 				FEB00BB81D448BFE00D2A69D /* WLHomeViewController.h */,
 				FEB00BB91D448BFE00D2A69D /* WLHomeViewController.m */,
+				FEB00BC01D44C2FA00D2A69D /* WLCategoryController.h */,
+				FEB00BC11D44C2FA00D2A69D /* WLCategoryController.m */,
+				FEB00BF31D44FE7600D2A69D /* WLMapViewController.h */,
+				FEB00BF41D44FE7600D2A69D /* WLMapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +168,12 @@
 		FEB00BAD1D4487B500D2A69D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FEB00BEA1D44E16B00D2A69D /* WLCategory.h */,
+				FEB00BEB1D44E16B00D2A69D /* WLCategory.m */,
+				FEB00BED1D44E43400D2A69D /* WLMap.h */,
+				FEB00BEE1D44E43400D2A69D /* WLMap.m */,
+				FEB00BF01D44E49F00D2A69D /* WLSort.h */,
+				FEB00BF11D44E49F00D2A69D /* WLSort.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,8 +194,57 @@
 				FEB00BBB1D448F4100D2A69D /* WLTopItem.h */,
 				FEB00BBC1D448F4100D2A69D /* WLTopItem.m */,
 				FEB00BBE1D448F4C00D2A69D /* WLTopItem.xib */,
+				FEB00BC31D44C76E00D2A69D /* WLLRTableView.h */,
+				FEB00BC41D44C76E00D2A69D /* WLLRTableView.m */,
+				FEB00BC61D44C77F00D2A69D /* WLLRTableView.xib */,
+				FEB00BF61D4501C100D2A69D /* WLLeftCell.h */,
+				FEB00BF71D4501C200D2A69D /* WLLeftCell.m */,
+				FEB00BF91D4501D500D2A69D /* WLRighteCell.h */,
+				FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FEB00BC81D44DF6200D2A69D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BC91D44DF6200D2A69D /* categories.plist */,
+				FEB00BCA1D44DF6200D2A69D /* gz.plist */,
+				FEB00BCB1D44DF6200D2A69D /* sorts.plist */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FEB00BCF1D44E0F600D2A69D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BD01D44E0F600D2A69D /* MJExtension */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FEB00BD01D44E0F600D2A69D /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FEB00BD11D44E0F600D2A69D /* MJExtension.h */,
+				FEB00BD21D44E0F600D2A69D /* MJExtensionConst.h */,
+				FEB00BD31D44E0F600D2A69D /* MJExtensionConst.m */,
+				FEB00BD41D44E0F600D2A69D /* MJFoundation.h */,
+				FEB00BD51D44E0F600D2A69D /* MJFoundation.m */,
+				FEB00BD61D44E0F600D2A69D /* MJProperty.h */,
+				FEB00BD71D44E0F600D2A69D /* MJProperty.m */,
+				FEB00BD81D44E0F600D2A69D /* MJType.h */,
+				FEB00BD91D44E0F600D2A69D /* MJType.m */,
+				FEB00BDA1D44E0F600D2A69D /* NSObject+MJCoding.h */,
+				FEB00BDB1D44E0F600D2A69D /* NSObject+MJCoding.m */,
+				FEB00BDC1D44E0F600D2A69D /* NSObject+MJKeyValue.h */,
+				FEB00BDD1D44E0F600D2A69D /* NSObject+MJKeyValue.m */,
+				FEB00BDE1D44E0F600D2A69D /* NSObject+MJProperty.h */,
+				FEB00BDF1D44E0F600D2A69D /* NSObject+MJProperty.m */,
+				FEB00BE01D44E0F600D2A69D /* NSString+MJExtension.h */,
+				FEB00BE11D44E0F600D2A69D /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB00BAA1D44868400D2A69D /* Images.xcassets in Resources */,
 				FEB00B9F1D44850600D2A69D /* Assets.xcassets in Resources */,
 				FEB00B9D1D44850600D2A69D /* Main.storyboard in Resources */,
+				FEB00BCE1D44DF6200D2A69D /* sorts.plist in Resources */,
+				FEB00BC71D44C77F00D2A69D /* WLLRTableView.xib in Resources */,
+				FEB00BCD1D44DF6200D2A69D /* gz.plist in Resources */,
+				FEB00BCC1D44DF6200D2A69D /* categories.plist in Resources */,
 				FEB00BBF1D448F4C00D2A69D /* WLTopItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,11 +323,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB00BE21D44E0F600D2A69D /* MJExtensionConst.m in Sources */,
+				FEB00BF81D4501C200D2A69D /* WLLeftCell.m in Sources */,
 				FEB00BBA1D448BFE00D2A69D /* WLHomeViewController.m in Sources */,
+				FEB00BE71D44E0F600D2A69D /* NSObject+MJKeyValue.m in Sources */,
 				FEB00BB41D44880D00D2A69D /* main.m in Sources */,
+				FEB00BE41D44E0F600D2A69D /* MJProperty.m in Sources */,
+				FEB00BE31D44E0F600D2A69D /* MJFoundation.m in Sources */,
+				FEB00BE51D44E0F600D2A69D /* MJType.m in Sources */,
+				FEB00BC21D44C2FA00D2A69D /* WLCategoryController.m in Sources */,
+				FEB00BFB1D4501D500D2A69D /* WLRighteCell.m in Sources */,
+				FEB00BEC1D44E16B00D2A69D /* WLCategory.m in Sources */,
+				FEB00BE91D44E0F600D2A69D /* NSString+MJExtension.m in Sources */,
+				FEB00BC51D44C76E00D2A69D /* WLLRTableView.m in Sources */,
+				FEB00BE81D44E0F600D2A69D /* NSObject+MJProperty.m in Sources */,
+				FEB00BF21D44E49F00D2A69D /* WLSort.m in Sources */,
+				FEB00BE61D44E0F600D2A69D /* NSObject+MJCoding.m in Sources */,
+				FEB00BF51D44FE7600D2A69D /* WLMapViewController.m in Sources */,
 				FEB00BB71D44890800D2A69D /* WLNavViewController.m in Sources */,
 				FEB00BBD1D448F4100D2A69D /* WLTopItem.m in Sources */,
 				FEB00BB31D44880D00D2A69D /* AppDelegate.m in Sources */,
+				FEB00BEF1D44E43400D2A69D /* WLMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
