@@ -9,14 +9,20 @@
 #import "WLHomeViewController.h"
 #import "WLTopItem.h"
 #import "WLCategory.h"
+#import "WLSort.h"
 #import "WLCategoryController.h"
 #import "WLMapViewController.h"
+#import "WLSortViewController.h"
 
+
+#import "WLConst.h"
 @interface WLHomeViewController ()
 /** popVc */
 @property(nonatomic,strong)WLCategoryController *popVc;
 /** mapPopVc */
 @property(nonatomic,strong)WLMapViewController *mapPopVc;
+/** sortPopVc */
+@property(nonatomic,strong)WLSortViewController *sortPopVc;
 
 
 /** categoryItemView */
@@ -28,6 +34,15 @@
 @end
 
 @implementation WLHomeViewController
+
+- (WLSortViewController *)sortPopVc
+{
+    if (_sortPopVc == nil) {
+        _sortPopVc = [[WLSortViewController alloc] init];
+        _sortPopVc.modalPresentationStyle = UIModalPresentationPopover;
+    }
+    return _sortPopVc;
+}
 
 - (WLMapViewController *)mapPopVc
 {
@@ -50,8 +65,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupNav];
+    [self setupNote];
 }
 
+- (void)setupNote
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sortDataChange:) name:kSortNotificationDataChange object:nil];
+    
+}
+
+- (void)sortDataChange:(NSNotification *)note
+{
+    //1.取出数据
+    WLSort *sort = (WLSort *)note.userInfo[kSortNotificationDataKey];
+    
+    //2.设置数据
+    [self.sortItemView setSubTitle:sort.label];
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
 
 - (void)setupNav
 {
@@ -94,9 +128,14 @@
     self.popVc.popoverPresentationController.backgroundColor = [UIColor whiteColor];
     __weak typeof(self) weakSelf = self;
     self.popVc.updateHomeTopItemBlock = ^(WLCategory *category,NSInteger row){
-        [weakSelf.categoryItemView setTitle:category.name];
-        [weakSelf.categoryItemView setSubTitle:category.subcategories[row]];
-        [weakSelf.categoryItemView setIconBtnNormal:category.icon andIconBtnClick:category.highlighted_icon];
+        if (row == -1) {
+            [weakSelf.categoryItemView setTitle:@"美团"];
+            [weakSelf.categoryItemView setSubTitle:category.name];
+        }else{
+            [weakSelf.categoryItemView setTitle:category.name];
+            [weakSelf.categoryItemView setSubTitle:category.subcategories[row]];
+        }
+          [weakSelf.categoryItemView setIconBtnNormal:category.icon andIconBtnClick:category.highlighted_icon];
         [weakSelf.popVc dismissViewControllerAnimated:YES completion:nil];
     };
     [self presentViewController:self.popVc animated:YES completion:nil];
@@ -112,9 +151,9 @@
 - (void)clickSort
 {
     NSLog(@"%s",__func__);
-    self.popVc.popoverPresentationController.sourceRect = self.sortItemView.bounds;
-    self.popVc.popoverPresentationController.sourceView = self.sortItemView;
-    self.popVc.popoverPresentationController.backgroundColor = [UIColor whiteColor];
-    [self presentViewController:self.popVc animated:YES completion:nil];
+    self.sortPopVc.popoverPresentationController.sourceRect = self.sortItemView.bounds;
+    self.sortPopVc.popoverPresentationController.sourceView = self.sortItemView;
+    self.sortPopVc.popoverPresentationController.backgroundColor = [UIColor whiteColor];
+    [self presentViewController:self.sortPopVc animated:YES completion:nil];
 }
 @end

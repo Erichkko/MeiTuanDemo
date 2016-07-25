@@ -11,7 +11,7 @@
 
 #import "WLCategory.h"
 #import "MJExtension.h"
-@interface WLCategoryController ()<WLLRTableViewDataSource>
+@interface WLCategoryController ()<WLLRTableViewDataSource,WLLRTableViewDelegate>
 /** categories */
 @property(nonatomic,strong)NSArray *categories;
 @end
@@ -30,6 +30,7 @@
     WLLRTableView *lrView = [WLLRTableView rlTableView];
     lrView.frame = self.view.bounds;
     lrView.dataSource = self;
+    lrView.delegate = self;
     [self.view addSubview:lrView];
 //    lrView.categores = self.categories;
 //    lrView.updateHomeTopItemBlock = self.updateHomeTopItemBlock;
@@ -61,4 +62,23 @@
     WLCategory *category = self.categories[row];
     return category.small_highlighted_icon;
 }
+
+#pragma mark - WLLRTableViewDelegate
+
+- (void)rlTableView:(WLLRTableView *)rlTableView selectedLeftIndex:(NSInteger)leftIndex
+{
+    WLCategory *category = self.categories[leftIndex];
+    if (category.subcategories.count == 0) {
+        self.updateHomeTopItemBlock(self.categories[leftIndex],-1);
+    }
+}
+
+- (void)rlTableView:(WLLRTableView *)rlTableView selectedLeftIndex:(NSInteger)leftIndex andSelectedRight:(NSInteger)rightIndex
+{
+    NSLog(@"leftIndex == %zd",leftIndex);
+    NSLog(@"rightIndex == %zd",rightIndex);
+    
+    self.updateHomeTopItemBlock(self.categories[leftIndex],rightIndex);
+}
 @end
+

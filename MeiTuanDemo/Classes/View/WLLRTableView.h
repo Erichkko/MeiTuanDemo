@@ -21,10 +21,21 @@
 - (NSString *)rlTableView:(WLLRTableView *)rlTableView heighImageNameForRow:(NSInteger)row;
 
 @end
+
+@protocol WLLRTableViewDelegate <NSObject>
+
+@optional
+- (void)rlTableView:(WLLRTableView *)rlTableView selectedLeftIndex:(NSInteger)leftIndex;
+- (void)rlTableView:(WLLRTableView *)rlTableView selectedLeftIndex:(NSInteger)leftIndex andSelectedRight:(NSInteger)rightIndex;
+
+@end
+
 @interface WLLRTableView : UIView
 
 + (instancetype)rlTableView;
 /** datasource */
 @property(nonatomic,weak)id <WLLRTableViewDataSource>dataSource;
+/** delegate */
+@property(nonatomic,weak)id <WLLRTableViewDelegate>delegate;
 
 @end

@@ -85,8 +85,14 @@
     if (tableView == self.leftTableView) {
         self.subData = [self.dataSource rlTableView:self subdataOfRow:indexPath.row];
         [self.rightTableView reloadData];
+        
+        if ([self.delegate respondsToSelector:@selector(rlTableView:selectedLeftIndex:)]) {
+            [self.delegate rlTableView:self selectedLeftIndex:indexPath.row];
+        }
     }else{
-      
+        if ([self.delegate respondsToSelector:@selector(rlTableView:selectedLeftIndex:andSelectedRight:)]) {
+            [self.delegate rlTableView:self selectedLeftIndex:[self.leftTableView indexPathForSelectedRow].row andSelectedRight:indexPath.row];
+        }
     }
 }
 

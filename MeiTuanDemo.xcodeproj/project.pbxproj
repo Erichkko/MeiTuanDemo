@@ -35,6 +35,11 @@
 		FEB00BF51D44FE7600D2A69D /* WLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BF41D44FE7600D2A69D /* WLMapViewController.m */; };
 		FEB00BF81D4501C200D2A69D /* WLLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BF71D4501C200D2A69D /* WLLeftCell.m */; };
 		FEB00BFB1D4501D500D2A69D /* WLRighteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */; };
+		FEB00BFE1D46558100D2A69D /* WLSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00BFD1D46558100D2A69D /* WLSortViewController.m */; };
+		FEB00C021D46585200D2A69D /* WLSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00C001D46585200D2A69D /* WLSortCell.m */; };
+		FEB00C031D46585200D2A69D /* WLSortCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB00C011D46585200D2A69D /* WLSortCell.xib */; };
+		FEB00C061D465B3700D2A69D /* UIView+WLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00C051D465B3700D2A69D /* UIView+WLExtension.m */; };
+		FEB00C091D4666B300D2A69D /* WLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB00C081D4666B300D2A69D /* WLConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +94,15 @@
 		FEB00BF71D4501C200D2A69D /* WLLeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLeftCell.m; sourceTree = "<group>"; };
 		FEB00BF91D4501D500D2A69D /* WLRighteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRighteCell.h; sourceTree = "<group>"; };
 		FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRighteCell.m; sourceTree = "<group>"; };
+		FEB00BFC1D46558100D2A69D /* WLSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSortViewController.h; sourceTree = "<group>"; };
+		FEB00BFD1D46558100D2A69D /* WLSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSortViewController.m; sourceTree = "<group>"; };
+		FEB00BFF1D46585200D2A69D /* WLSortCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSortCell.h; sourceTree = "<group>"; };
+		FEB00C001D46585200D2A69D /* WLSortCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSortCell.m; sourceTree = "<group>"; };
+		FEB00C011D46585200D2A69D /* WLSortCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLSortCell.xib; sourceTree = "<group>"; };
+		FEB00C041D465B3700D2A69D /* UIView+WLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLExtension.h"; sourceTree = "<group>"; };
+		FEB00C051D465B3700D2A69D /* UIView+WLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLExtension.m"; sourceTree = "<group>"; };
+		FEB00C071D4666B300D2A69D /* WLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLConst.h; sourceTree = "<group>"; };
+		FEB00C081D4666B300D2A69D /* WLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLConst.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +175,8 @@
 				FEB00BC11D44C2FA00D2A69D /* WLCategoryController.m */,
 				FEB00BF31D44FE7600D2A69D /* WLMapViewController.h */,
 				FEB00BF41D44FE7600D2A69D /* WLMapViewController.m */,
+				FEB00BFC1D46558100D2A69D /* WLSortViewController.h */,
+				FEB00BFD1D46558100D2A69D /* WLSortViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +200,10 @@
 				FEB00BB01D44880D00D2A69D /* AppDelegate.h */,
 				FEB00BB11D44880D00D2A69D /* AppDelegate.m */,
 				FEB00BB21D44880D00D2A69D /* main.m */,
+				FEB00C041D465B3700D2A69D /* UIView+WLExtension.h */,
+				FEB00C051D465B3700D2A69D /* UIView+WLExtension.m */,
+				FEB00C071D4666B300D2A69D /* WLConst.h */,
+				FEB00C081D4666B300D2A69D /* WLConst.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -201,6 +221,9 @@
 				FEB00BF71D4501C200D2A69D /* WLLeftCell.m */,
 				FEB00BF91D4501D500D2A69D /* WLRighteCell.h */,
 				FEB00BFA1D4501D500D2A69D /* WLRighteCell.m */,
+				FEB00BFF1D46585200D2A69D /* WLSortCell.h */,
+				FEB00C001D46585200D2A69D /* WLSortCell.m */,
+				FEB00C011D46585200D2A69D /* WLSortCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +331,7 @@
 			files = (
 				FEB00B9F1D44850600D2A69D /* Assets.xcassets in Resources */,
 				FEB00B9D1D44850600D2A69D /* Main.storyboard in Resources */,
+				FEB00C031D46585200D2A69D /* WLSortCell.xib in Resources */,
 				FEB00BCE1D44DF6200D2A69D /* sorts.plist in Resources */,
 				FEB00BC71D44C77F00D2A69D /* WLLRTableView.xib in Resources */,
 				FEB00BCD1D44DF6200D2A69D /* gz.plist in Resources */,
@@ -326,9 +350,11 @@
 				FEB00BE21D44E0F600D2A69D /* MJExtensionConst.m in Sources */,
 				FEB00BF81D4501C200D2A69D /* WLLeftCell.m in Sources */,
 				FEB00BBA1D448BFE00D2A69D /* WLHomeViewController.m in Sources */,
+				FEB00C061D465B3700D2A69D /* UIView+WLExtension.m in Sources */,
 				FEB00BE71D44E0F600D2A69D /* NSObject+MJKeyValue.m in Sources */,
 				FEB00BB41D44880D00D2A69D /* main.m in Sources */,
 				FEB00BE41D44E0F600D2A69D /* MJProperty.m in Sources */,
+				FEB00C091D4666B300D2A69D /* WLConst.m in Sources */,
 				FEB00BE31D44E0F600D2A69D /* MJFoundation.m in Sources */,
 				FEB00BE51D44E0F600D2A69D /* MJType.m in Sources */,
 				FEB00BC21D44C2FA00D2A69D /* WLCategoryController.m in Sources */,
@@ -339,11 +365,13 @@
 				FEB00BE81D44E0F600D2A69D /* NSObject+MJProperty.m in Sources */,
 				FEB00BF21D44E49F00D2A69D /* WLSort.m in Sources */,
 				FEB00BE61D44E0F600D2A69D /* NSObject+MJCoding.m in Sources */,
+				FEB00C021D46585200D2A69D /* WLSortCell.m in Sources */,
 				FEB00BF51D44FE7600D2A69D /* WLMapViewController.m in Sources */,
 				FEB00BB71D44890800D2A69D /* WLNavViewController.m in Sources */,
 				FEB00BBD1D448F4100D2A69D /* WLTopItem.m in Sources */,
 				FEB00BB31D44880D00D2A69D /* AppDelegate.m in Sources */,
 				FEB00BEF1D44E43400D2A69D /* WLMap.m in Sources */,
+				FEB00BFE1D46558100D2A69D /* WLSortViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
