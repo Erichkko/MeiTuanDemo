@@ -81,6 +81,8 @@
     
     //2.设置数据
     [self.sortItemView setSubTitle:sort.label];
+    //消失pop
+    [self.sortPopVc dismissViewControllerAnimated:YES  completion:nil];
 }
 - (void)dealloc
 {
